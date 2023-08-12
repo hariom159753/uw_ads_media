@@ -1,1 +1,264 @@
-# uw_ads_media
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Tailwind CSS</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Mobile menu toggle -->
+  <div class="block sm:hidden bg-gray-900 text-white p-4">
+    <button id="mobile-menu-button" class="focus:outline-none">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+  </div>
+    <!-- Header -->
+    <header class="bg-gray-900 text-white">
+      <div class="container mx-auto py-4 px-6 md:flex md:items-center md:justify-between">
+          <!-- Logo -->
+          <div class="flex items-center justify-start mb-4 md:mb-0">
+              <div class="text-xl font-bold">
+                  UW Ads Media
+              </div>
+          </div>
+    
+          <!-- Navigation -->
+          <nav class="md:flex md:items-center md:w-auto" id="mobile-menu">
+            <ul class="md:flex space-y-4 md:space-y-0 md:space-x-4">
+              <li><a href="#Home" class="block px-2 py-1 md:px-4 md:py-2 hover:text-gray-400">Home</a></li>
+              <li><a href="#About" class="block px-2 py-1 md:px-4 md:py-2 hover:text-gray-400">About</a></li>
+              <li><a href="#services" class="block px-2 py-1 md:px-4 md:py-2 hover:text-gray-400">Services</a></li>
+              <li><a href="#Contact" class="block px-2 py-1 md:px-4 md:py-2 hover:text-gray-400">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <!-- Your hero section content goes here -->
+    <section class="bg-gray-800 text-white py-10 md:py-20">
+        <div class="container mx-auto px-4">
+          <div class="text-center">
+            <h1 class="text-2xl md:text-6xl font-bold mb-4">Welcome to Our Website</h1>
+            <p class="text-base md:text-xl mb-8">We offer end-to-end advertising services that boost business for advertisers and publishers. From reselling advertising spaces to optimizing campaigns in multiple platforms. Learn more about our services!</p>
+            <a href="signup.html" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 md:px-6 py-2 md:py-3 rounded-md shadow-md transition duration-300">Get Started</a>
+          </div>
+        </div>
+      </section>
+      <!-- Information Content -->
+      <section class="bg-gray-100 py-10">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center md:items-start">
+            <!-- Image or Icon (Replace with your own) -->
+            <img src="https://picsum.photos/200/300" alt="Information Image" class="w-32 h-32 md:w-48 md:h-48 rounded-full mb-4 md:mb-0">
+            <div class="md:ml-8">
+              <h2 class="text-2xl md:text-3xl font-bold mb-4">About Our Compny</h2>
+              <p class="text-gray-700 text-lg leading-relaxed">Welcome to UW Ads Media! We are thrilled to have you here. As a team of passionate marketers, our mission is to help your business thrive in the digital world. With a focus on data-driven strategies and a deep understanding of human psychology, we tailor our services to connect with your target audience on a profound level. Trust is at the core of what we do, and we are committed to delivering outstanding results that exceed your expectations. Let’s embark on this journey together and unlock the full potential of your brand.</p>
+              <p class="text-gray-700 text-lg leading-relaxed"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <body>  
+        <h2 class="text-3xl font-bold text-center mb-8">What we do</h2>
+        <div class="bg-white rounded-lg shadow-lg p-6">
+                    <p class="text-gray-600">At UW AdsMedia, we are dedicated to helping businesses thrive in the ever-evolving digital landscape. As a cutting-edge Social Media Marketing Agency (SMMA), our mission is to elevate your brand's online presence and create strategic marketing campaigns that yield tangible results.
+                      Here's what we do:
+                      SEO, SEM, Display Ads, Copywriting, Content Creation, Content Management, Brand Marketing, Brand Awareness, Email Marketing
+                      
+                      At UW AdsMedia, we are committed to delivering exceptional results that drive your business forward. With a focus on innovation, creativity, and data-driven strategies, we aim to be your reliable partner in navigating the digital landscape and achieving sustainable growth.</p>
+               </div>
+              </body>
+               <!-- services section -->
+      <section id="services" class="bg-gray-100 py-10">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+              <!-- Replace with your service icon or image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\SEO-background-1024x538.jpg" alt="Service 1" class="w-20 h-20 mb-4">
+              <h3 class="text-xl font-semibold mb-2">Service 1</h3>
+              <p class="text-gray-700 text-center">1.	SEO (Search Engine Optimization): Improve your website’s visibility and organic traffic on search engines like Google. We optimize your site’s content, structure, and technical aspects to rank higher in search results, attracting more relevant visitors.</p>
+            </div>
+    
+            <!-- Service Card 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+              <!-- Replace with your service icon or image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\images (1).jpeg" alt="Service 2" class="w-20 h-20 mb-4">
+              <h3 class="text-xl font-semibold mb-2">Service 2</h3>
+              <p class="text-gray-700 text-center">2.	SEM (Search Engine Marketing): Accelerate your online visibility through paid advertising on search engines. Our targeted campaigns ensure your ads reach the right audience, driving immediate traffic and conversions.</p>
+            </div>
+    
+            <!-- Service Card 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+              <!-- Replace with your service icon or image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\static-ad-bks.jpg"  alt="Service 3" class="w-20 h-20 mb-4">
+              <h3 class="text-xl font-semibold mb-2">Service 3</h3>
+              <p class="text-gray-700 text-center">3.	Display Ads: Capture your audience’s attention with visually appealing banner ads across various websites and platforms. Our strategic display ad campaigns increase brand exposure and engage potential customers.</p>
+            </div>
+            <!-- Service Card 4 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+              <!-- Replace with your service icon or image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\Copywriting.jpg" alt="Service 3" class="w-20 h-20 mb-4">
+              <h3 class="text-xl font-semibold mb-2">Service 4</h3>
+              <p class="text-gray-700 text-center">4.	Copywriting: Craft compelling and persuasive content that resonates with your audience. From engaging website copy to attention-grabbing ad copies, we use words that inspire action and foster a deeper connection with your brand.</p>
+            </div>
+            <!-- Service Card 5 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+              <!-- Replace with your service icon or image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\R.jpeg" alt="Service 3" class="w-20 h-20 mb-4">
+              <h3 class="text-xl font-semibold mb-2">Service 5</h3>
+              <p class="text-gray-700 text-center">5.	Content Creation: Fuel your digital presence with valuable and relevant content. Our creative team produces high-quality articles, videos, infographics, and more to educate, entertain, and engage your target audience.</p>
+            </div>
+            <!-- Service Card 6 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+              <!-- Replace with your service icon or image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\R.png" alt="Service 3" class="w-20 h-20 mb-4">
+              <h3 class="text-xl font-semibold mb-2">Service 6</h3>
+              <p class="text-gray-700 text-center">6.	Content Management: Keep your online platforms updated and relevant with our content management services. We handle scheduling, publishing, and curating content, ensuring a consistent and cohesive brand message.</p>
+            </div>
+            <!-- Service Card 7 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+              <!-- Replace with your service icon or image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\brandsearch.jpg" alt="Service 3" class="w-20 h-20 mb-4">
+              <h3 class="text-xl font-semibold mb-2">Service 7</h3>
+              <p class="text-gray-700 text-center">7.	Brand Marketing: Build a powerful brand identity that stands out in the market. Through a mix of visual elements, storytelling, and messaging, we create a compelling brand strategy to drive brand loyalty and customer recognition.</p>
+            </div>
+            <!-- Service Card 8 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+              <!-- Replace with your service icon or image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\brand-awareness-image.jpg" alt="Service 3" class="w-20 h-20 mb-4">
+              <h3 class="text-xl font-semibold mb-2">Service 8</h3>
+              <p class="text-gray-700 text-center">8.	Brand Awareness: Increase your brand’s recognition and recall among your target audience. Our strategic brand awareness campaigns raise your visibility across multiple channels, helping you stay top-of-mind.</p>
+            </div>
+            <!-- Service Card 9 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+              <!-- Replace with your service icon or image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\R1.jpeg" alt="Service 3" class="w-20 h-20 mb-4">
+              <h3 class="text-xl font-semibold mb-2">Service 9</h3>
+              <p class="text-gray-700 text-center">9.	Email Marketing: Nurture and engage your audience through personalized and targeted email campaigns. We create impactful emails that drive conversions, loyalty, and foster stronger relationships with your customers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section id="About" class="bg-gray-100 py-10">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- About Image -->
+            <div class="mb-6 md:mb-0">
+              <!-- Replace with your about image -->
+              <img src="C:\Users\hario\OneDrive\Desktop\tailwind\uwadsmedia\best-about-us-pages.webp" alt="About Us" class="w-full h-auto rounded-lg shadow-md">
+            </div>
+    
+            <!-- About Content -->
+            <div>
+              <p class="text-gray-700 text-lg leading-relaxed">We are a team of experienced professionals specializing in marketing and advertising solutions. Our goal is to help businesses thrive and achieve their objectives through innovative strategies.UW Ads Media is a full-service advertising agency that delivers comprehensive solutions to elevate your business. We specialize in targeted advertising, creative content, SEO, social media management, data-driven analytics, and industry expertise. Our collaborative approach, proven track record, and continuous improvement set us apart from other agencies. </p>
+              <p class="text-gray-700 text-lg leading-relaxed mt-4">Let's work together to achieve your marketing goals.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+  <section id="Contact" class="bg-gray-100 py-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Contact Form -->
+        <div>
+          <form action="#" method="POST" class="flex flex-col">
+            <input type="text" name="name" placeholder="Your Name" class="mb-4 py-2 px-4 rounded-lg border focus:outline-none focus:ring focus:border-blue-500">
+            <input type="email" name="email" placeholder="Your Email" class="mb-4 py-2 px-4 rounded-lg border focus:outline-none focus:ring focus:border-blue-500">
+            <textarea name="message" rows="4" placeholder="Your Message" class="mb-4 py-2 px-4 rounded-lg border focus:outline-none focus:ring focus:border-blue-500"></textarea>
+            <a href="massage.html" type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">Send Message</a>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <div class="flex items-center mb-4">
+            <i class="fas fa-map-marker-alt text-blue-500 text-2xl mr-2"></i>
+            <p>1234 Your Street, City, Country</p>
+          </div>
+          <div class="flex items-center mb-4">
+            <i class="fas fa-phone-alt text-blue-500 text-2xl mr-2"></i>
+            <p>+1 234 567 890</p>
+          </div>
+          <div class="flex items-center">
+            <i class="fas fa-envelope text-blue-500 text-2xl mr-2"></i>
+            <p>contact@example.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white">
+    <div class="container mx-auto px-4 py-8 md:py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Footer Logo -->
+      <div class="text-center md:text-left">
+        <div class="text-xl font-bold">Your Logo</div>
+        <p class="text-sm mt-2">1234 Your Street, City, Country</p>
+      </div>
+      
+      <!-- Footer Navigation -->
+      <div class="text-center md:text-left">
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <nav>
+          <ul>
+            <li><a href="Home" class="block hover:text-gray-400">Home</a></li>
+            <li><a href="#About" class="block hover:text-gray-400">About</a></li>
+            <li><a href="#services" class="block hover:text-gray-400">Services</a></li>
+            <li><a href="Contact" class="block hover:text-gray-400">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <!-- Social Media Icons -->
+      <div class="text-center md:text-right">
+        <h4 class="text-lg font-semibold mb-4">Connect with Us</h4>
+        <ul class="flex justify-center md:justify-end space-x-4">
+          <li><a href="#" class="text-white hover:text-gray-400"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/uw_ads_media" class="text-white hover:text-gray-400"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://instagram.com/uw_ads_media?igshid=MzRlODBiNWFlZA==" class="text-white hover:text-gray-400"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include Font Awesome for social media icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const messageForm = document.getElementById("message-form");
+      const sendMessageButton = document.getElementById("send massage");
+
+      messageForm.addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Here, you can perform any necessary form processing, API calls, etc.
+
+          // Redirect to the "Message Sent Successfully" page
+          window.location.href = "massage.html";
+      });
+  });
+</script>
+
+</body>
+
+</html>
+
